@@ -283,6 +283,8 @@
 		CE0E210D18DC2AB000E6C1D8 /* Todo.md in Resources */ = {isa = PBXBuildFile; fileRef = CE0E210C18DC2AB000E6C1D8 /* Todo.md */; };
 		CE0E211D18DC2CCD00E6C1D8 /* MutilPlatformAndroidMk.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE0E211C18DC2CCD00E6C1D8 /* MutilPlatformAndroidMk.txt */; };
 		CEFCC65618DC2E8F00E0532C /* SimpleIosProjectAndroidMK.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEFCC65518DC2E8F00E0532C /* SimpleIosProjectAndroidMK.txt */; };
+		CEFCC65918DC322F00E0532C /* DBTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEFCC65718DC322F00E0532C /* DBTools.cpp */; };
+		CEFCC65D18DC35DC00E0532C /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = CEFCC65A18DC35DC00E0532C /* sqlite3.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -879,6 +881,11 @@
 		CE0E210C18DC2AB000E6C1D8 /* Todo.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Todo.md; path = Classes/Todo.md; sourceTree = "<group>"; };
 		CE0E211C18DC2CCD00E6C1D8 /* MutilPlatformAndroidMk.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MutilPlatformAndroidMk.txt; path = Classes/Tools/compile/MutilPlatformAndroidMk.txt; sourceTree = "<group>"; };
 		CEFCC65518DC2E8F00E0532C /* SimpleIosProjectAndroidMK.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleIosProjectAndroidMK.txt; path = Classes/Tools/compile/SimpleIosProjectAndroidMK.txt; sourceTree = "<group>"; };
+		CEFCC65718DC322F00E0532C /* DBTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DBTools.cpp; path = Classes/Tools/Datas/db/DBTools.cpp; sourceTree = "<group>"; };
+		CEFCC65818DC322F00E0532C /* DBTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBTools.h; path = Classes/Tools/Datas/db/DBTools.h; sourceTree = "<group>"; };
+		CEFCC65A18DC35DC00E0532C /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = Classes/Tools/Datas/db/sqlite3.c; sourceTree = "<group>"; };
+		CEFCC65B18DC35DC00E0532C /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = Classes/Tools/Datas/db/sqlite3.h; sourceTree = "<group>"; };
+		CEFCC65C18DC35DC00E0532C /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = Classes/Tools/Datas/db/sqlite3ext.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2156,6 +2163,11 @@
 		CE0E211618DC2C4900E6C1D8 /* db */ = {
 			isa = PBXGroup;
 			children = (
+				CEFCC65A18DC35DC00E0532C /* sqlite3.c */,
+				CEFCC65B18DC35DC00E0532C /* sqlite3.h */,
+				CEFCC65C18DC35DC00E0532C /* sqlite3ext.h */,
+				CEFCC65718DC322F00E0532C /* DBTools.cpp */,
+				CEFCC65818DC322F00E0532C /* DBTools.h */,
 			);
 			name = db;
 			sourceTree = "<group>";
@@ -2341,6 +2353,7 @@
 				CE0E1D9C18DC226700E6C1D8 /* CCActionEase.cpp in Sources */,
 				CE0E20D318DC226C00E6C1D8 /* cpArbiter.c in Sources */,
 				CE0E1FA518DC226A00E6C1D8 /* CCBKeyframe.cpp in Sources */,
+				CEFCC65918DC322F00E0532C /* DBTools.cpp in Sources */,
 				CE0E1F4818DC226A00E6C1D8 /* ZipUtils.cpp in Sources */,
 				CE0E204D18DC226B00E6C1D8 /* WebSocket.cpp in Sources */,
 				CE0E1DD418DC226800E6C1D8 /* CCArray.cpp in Sources */,
@@ -2390,6 +2403,7 @@
 				CE0E1F4518DC226A00E6C1D8 /* unzip.cpp in Sources */,
 				CE0E201518DC226B00E6C1D8 /* CCControlSwitch.cpp in Sources */,
 				CE0E1FF318DC226B00E6C1D8 /* CCComController.cpp in Sources */,
+				CEFCC65D18DC35DC00E0532C /* sqlite3.c in Sources */,
 				CE0E20DF18DC226C00E6C1D8 /* cpHashSet.c in Sources */,
 				CE0E1F3718DC226A00E6C1D8 /* tinyxml2.cpp in Sources */,
 				CE0E200C18DC226B00E6C1D8 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
