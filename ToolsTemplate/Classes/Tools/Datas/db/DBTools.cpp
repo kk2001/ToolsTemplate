@@ -47,7 +47,70 @@ bool DBTools::createTable( DBInfo& info ){
     }
     
     
-    sqlite3_close( contractDB);
+    if ( contractDB != NULL)sqlite3_close( contractDB);
     
     return  rlt;
 }
+
+
+// -----------------------------------插入函数--------------------------------------------
+
+bool DBTools::insertValue(DBInfo &info){
+    
+    sqlite3* contractDB;
+    sqlite3_stmt* statement;
+    
+    if ( sqlite3_open(info.db_name.c_str(), &contractDB ) == SQLITE_OK) {
+        
+        sqlite3_prepare(contractDB, info.sql.c_str(), -1, &statement, NULL);
+        if ( sqlite3_step( statement) != SQLITE_DONE) {
+            CCAssert( false, "插入数据失败，检查数据是否正确" );
+        }
+     
+        
+    } // end ok
+    
+    if(statement)sqlite3_finalize( statement );
+    if(contractDB)sqlite3_close( contractDB);
+    
+    return true;
+}
+
+void DBTools::insertValues(std::vector<TestBean> &list, DBInfo& info ){
+    
+    
+}
+
+void DBTools::insertValues(std::vector<std::string> &list ,DBInfo& info ){
+    
+    sqlite3* contractDB;
+    sqlite3_stmt* statement;
+    
+    if ( sqlite3_open(info.db_name.c_str(), &contractDB ) == SQLITE_OK) {
+        
+        vector<string>::iterator it = list.begin();
+        
+        while( it != list.end()){
+            
+            string& sql = *it;
+            
+            CCAssert( sql.compare( "" ) != 0 ,  "Sql 语句为空" );
+            
+            
+            sqlite3_prepare(contractDB, sql.c_str(), -1, &statement, NULL);
+            if ( sqlite3_step( statement) != SQLITE_DONE) {
+                CCAssert( false, "插入数据失败，检查数据是否正确" );
+            }
+            
+            it++;
+        } // end while
+        
+    } // end ok
+    
+    if(statement)sqlite3_finalize( statement );
+    if(contractDB)sqlite3_close( contractDB);
+    
+    
+}
+
+

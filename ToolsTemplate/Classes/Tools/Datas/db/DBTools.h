@@ -10,6 +10,7 @@
 #define __ToolsTemplate__DBTools__
 
 #include <string>
+#include <vector>
 #include "sqlite3.h"
 
 struct DBInfo {
@@ -26,11 +27,32 @@ struct DBInfo {
     
 };
 
+struct TestBean {
+    
+    std::string name;
+    
+};
+
 class DBTools  {
     
 public:
     
     bool createTable( DBInfo& dbInfo );
+    
+   // insert
+    bool insertValue( DBInfo& info );
+    void insertValues( std::vector<TestBean>& list, DBInfo& info );
+    void insertValues( std::vector<std::string>& list, DBInfo& info  );
+        
+    
+    // select
+    std::vector<TestBean> getList( DBInfo& info );
+    
+    // delete
+    bool deleteValues( DBInfo& info );
+    
+    // update
+    bool updateValues( DBInfo& info );
     
     
 };
