@@ -281,6 +281,7 @@
 		CE0E210118DC226C00E6C1D8 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0E210018DC226C00E6C1D8 /* AppDelegate.cpp */; };
 		CE0E210418DC226C00E6C1D8 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0E210318DC226C00E6C1D8 /* HelloWorldScene.cpp */; };
 		CE0E210D18DC2AB000E6C1D8 /* Todo.md in Resources */ = {isa = PBXBuildFile; fileRef = CE0E210C18DC2AB000E6C1D8 /* Todo.md */; };
+		CE0E211D18DC2CCD00E6C1D8 /* MutilPlatformAndroidMk.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE0E211C18DC2CCD00E6C1D8 /* MutilPlatformAndroidMk.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -875,6 +876,7 @@
 		CE0E210218DC226C00E6C1D8 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		CE0E210318DC226C00E6C1D8 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		CE0E210C18DC2AB000E6C1D8 /* Todo.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Todo.md; path = Classes/Todo.md; sourceTree = "<group>"; };
+		CE0E211C18DC2CCD00E6C1D8 /* MutilPlatformAndroidMk.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MutilPlatformAndroidMk.txt; path = Classes/Tools/compile/MutilPlatformAndroidMk.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2096,12 +2098,93 @@
 		CE0E20FE18DC226C00E6C1D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CE0E211118DC2BBA00E6C1D8 /* Tools */,
 				CE0E20FF18DC226C00E6C1D8 /* AppDelegate.h */,
 				CE0E210018DC226C00E6C1D8 /* AppDelegate.cpp */,
 				CE0E210218DC226C00E6C1D8 /* HelloWorldScene.h */,
 				CE0E210318DC226C00E6C1D8 /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		CE0E211118DC2BBA00E6C1D8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E211B18DC2C9F00E6C1D8 /* compile */,
+				CE0E211A18DC2C7A00E6C1D8 /* Web */,
+				CE0E211518DC2C0700E6C1D8 /* Thread */,
+				CE0E211418DC2BFD00E6C1D8 /* Datas */,
+				CE0E211318DC2BCD00E6C1D8 /* Algorithm */,
+				CE0E211218DC2BC800E6C1D8 /* UI */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		CE0E211218DC2BC800E6C1D8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		CE0E211318DC2BCD00E6C1D8 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Algorithm;
+			sourceTree = "<group>";
+		};
+		CE0E211418DC2BFD00E6C1D8 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E211918DC2C5500E6C1D8 /* xml */,
+				CE0E211718DC2C4E00E6C1D8 /* json */,
+				CE0E211618DC2C4900E6C1D8 /* db */,
+			);
+			name = Datas;
+			sourceTree = "<group>";
+		};
+		CE0E211518DC2C0700E6C1D8 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Thread;
+			sourceTree = "<group>";
+		};
+		CE0E211618DC2C4900E6C1D8 /* db */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		CE0E211718DC2C4E00E6C1D8 /* json */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		CE0E211918DC2C5500E6C1D8 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = xml;
+			sourceTree = "<group>";
+		};
+		CE0E211A18DC2C7A00E6C1D8 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		CE0E211B18DC2C9F00E6C1D8 /* compile */ = {
+			isa = PBXGroup;
+			children = (
+				CE0E211C18DC2CCD00E6C1D8 /* MutilPlatformAndroidMk.txt */,
+			);
+			name = compile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2165,6 +2248,7 @@
 				CE0E210D18DC2AB000E6C1D8 /* Todo.md in Resources */,
 				CE0E1D7E18DC226700E6C1D8 /* Icon-Small@2x.png in Resources */,
 				CE0E1D7418DC226700E6C1D8 /* Default.png in Resources */,
+				CE0E211D18DC2CCD00E6C1D8 /* MutilPlatformAndroidMk.txt in Resources */,
 				CE0E1D7218DC226700E6C1D8 /* CloseSelected.png in Resources */,
 				CE0E1D8218DC226700E6C1D8 /* Icon@2x.png in Resources */,
 				CE0E1F9718DC226A00E6C1D8 /* project.pbxproj in Resources */,
