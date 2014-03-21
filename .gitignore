@@ -1,0 +1,14 @@
+
+
+_Store
+*.swp
+*~.nib
+build/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.xcodeproj/xcuserdata/*
+*.xcodeproj/project.xcworkspace/xcuserdata/*
+*.xcodeproj/project.xcworkspace/xcuserdata/UserInterfaceState.xcuserstate
+
+
