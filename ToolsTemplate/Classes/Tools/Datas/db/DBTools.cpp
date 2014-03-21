@@ -7,6 +7,7 @@
 //
 
 #include "DBTools.h"
+#include "cocos2d.h"
 using namespace std;
 
 
@@ -19,16 +20,20 @@ using namespace std;
  *
  *	@return	true：成功 false：失败
  */
-bool DBTools::createTable(std::string db_name, std::string& sql ){
+bool DBTools::createTable( DBInfo& info ){
     bool rlt = false;
+
+    CCAssert( info.db_name.compare( "" ) == 0 , "表名不能为空!!!");
+    CCAssert( info.sql.compare( "" ) == 0 , "执行语句不能为空!!!");
+    
     
     sqlite3* contractDB;
     
-    if( sqlite3_open( db_name.c_str(), &contractDB ) == SQLITE_OK){
+    if( sqlite3_open( info.db_name.c_str(), &contractDB ) == SQLITE_OK){
         
         char* errMsg;
         
-        if ( sqlite3_exec(contractDB, sql.c_str(), NULL, NULL, &errMsg) != SQLITE_OK) {
+        if ( sqlite3_exec(contractDB, info.sql.c_str(), NULL, NULL, &errMsg) != SQLITE_OK) {
             rlt = false;
         }else{
             rlt = true;

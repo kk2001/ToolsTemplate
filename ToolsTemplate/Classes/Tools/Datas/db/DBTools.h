@@ -9,16 +9,28 @@
 #ifndef __ToolsTemplate__DBTools__
 #define __ToolsTemplate__DBTools__
 
-
 #include <string>
 #include "sqlite3.h"
 
-class DBTools  {
+struct DBInfo {
+    DBInfo(){
+        db_name = "";
+        sql = "";
+        _callback = NULL;
+    }
     
+    sqlite3_callback _callback;
+    std::string db_name;
+    std::string sql;
+    
+    
+};
+
+class DBTools  {
     
 public:
     
-    bool createTable(std::string db_name, std::string& sql );
+    bool createTable( DBInfo& dbInfo );
     
     
 };
