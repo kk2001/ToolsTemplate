@@ -1,0 +1,22 @@
+ LOCAL_PATH := $(call my-dir)                                                
+  1  
+  2 include $(CLEAR_VARS)
+  3  
+  4 LOCAL_MODULE := game_shared
+  5  
+  6 LOCAL_MODULE_FILENAME := libgame
+  7  
+  8 FILE_LIST := hellocpp/main.cpp
+  9 FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/*.cpp)
+ 10 FILE_LIST += $(wildcard $(LOCAL_PATH)/../../Classes/*.c)
+ 11 LOCAL_SRC_FILES := $(FILE_LIST:$(LOCAL_PATH)/%=%)
+ 12  
+ 13 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes                   
+ 14  
+ 15 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static cocosdenshion_static cocos_e
+ 16             
+ 17 include $(BUILD_SHARED_LIBRARY)
+ 18  
+ 19 $(call import-module,CocosDenshion/android) \
+ 20 $(call import-module,cocos2dx) \
+ 21 $(call import-module,extensions)
