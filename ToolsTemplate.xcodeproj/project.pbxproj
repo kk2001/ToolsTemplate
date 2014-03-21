@@ -280,6 +280,7 @@
 		CE0E20FB18DC226C00E6C1D8 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0E20FA18DC226C00E6C1D8 /* libwebsockets.a */; };
 		CE0E210118DC226C00E6C1D8 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0E210018DC226C00E6C1D8 /* AppDelegate.cpp */; };
 		CE0E210418DC226C00E6C1D8 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0E210318DC226C00E6C1D8 /* HelloWorldScene.cpp */; };
+		CE0E210D18DC2AB000E6C1D8 /* Todo.md in Resources */ = {isa = PBXBuildFile; fileRef = CE0E210C18DC2AB000E6C1D8 /* Todo.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +874,7 @@
 		CE0E210018DC226C00E6C1D8 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		CE0E210218DC226C00E6C1D8 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		CE0E210318DC226C00E6C1D8 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		CE0E210C18DC2AB000E6C1D8 /* Todo.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Todo.md; path = Classes/Todo.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -937,6 +939,7 @@
 				CE0E1D8F18DC226700E6C1D8 /* libs */,
 				CE0E20FE18DC226C00E6C1D8 /* Classes */,
 				CE0E20FC18DC226C00E6C1D8 /* Supporting Files */,
+				CE0E210C18DC2AB000E6C1D8 /* Todo.md */,
 			);
 			path = ToolsTemplate;
 			sourceTree = "<group>";
@@ -2159,6 +2162,7 @@
 				CE0E1D7618DC226700E6C1D8 /* HelloWorld.png in Resources */,
 				CE0E1D7A18DC226700E6C1D8 /* Icon-Small-50.png in Resources */,
 				CE0E1D8418DC226700E6C1D8 /* iTunesArtwork in Resources */,
+				CE0E210D18DC2AB000E6C1D8 /* Todo.md in Resources */,
 				CE0E1D7E18DC226700E6C1D8 /* Icon-Small@2x.png in Resources */,
 				CE0E1D7418DC226700E6C1D8 /* Default.png in Resources */,
 				CE0E1D7218DC226700E6C1D8 /* CloseSelected.png in Resources */,
@@ -2566,6 +2570,7 @@
 				CE0E210918DC226C00E6C1D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
